@@ -10,6 +10,10 @@
   display: block !important;
 }
 
+.focused {
+  font-weight: 700 !important;
+}
+
 .faq {
   background-color: $white;
 
@@ -42,7 +46,7 @@
     }
 
     .panel {
-      padding: 0 1rem;
+      padding: 1rem 1rem;
       overflow: hidden;
       background-color: $white;
       display: none;

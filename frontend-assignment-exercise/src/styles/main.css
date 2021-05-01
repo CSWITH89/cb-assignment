@@ -201,6 +201,10 @@
   display: block !important;
 }
 
+.focused {
+  font-weight: 700 !important;
+}
+
 .faq {
   background-color: #ffffff;
 }
@@ -242,7 +246,7 @@
 }
 
 .faq__container .panel {
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   overflow: hidden;
   background-color: #ffffff;
   display: none;
