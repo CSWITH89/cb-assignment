@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Red Alert</title>
     <link rel="stylesheet" href="../src/styles/main.css">
+    <script src="../src/scripts/accordion.js"></script>
   </head>
   <body>
     <!-- Header Section  -->
@@ -74,15 +75,41 @@
             <img src="../public/assets/images/product-1-transparent.png" alt="security devices" class="hero__container--image">
           </div>
         </div>
-
-
-      
-
-        
-        
-
       </div>
     </section>
-    <script src="./assets/scripts/bundle.js" defer></script>
+    <!-- FAQ Section -->
+    <section class="faq">
+      <div class="faq__container">
+
+<h2 class="faq__container--title">
+  Most asked questions
+</h2>
+
+<div class="faq__container--questions">
+  <button onclick="accordionToggle('panel1')" type="button" id="accordion1" class="faq__container--accordion">Open accordion</button>
+  <div class="panel faq__container--panel1">
+    <p>Lorem ipsum...</p>
+  </div> 
+  <button onclick="accordionToggle('panel2')" type="button" id="accordion2" class="faq__container--accordion">Open accordion</button>
+  <div class="panel faq__container--panel2">
+    <p>Lorem ipsum...</p>
+  </div> 
+  <button onclick="accordionToggle('paenl3')" type="button" id="accordion3" class="faq__container--accordion">Open accordion</button>
+  <div class="panel faq__container--panel3">
+    <p>Lorem ipsum...</p>
+  </div> 
+  <button onclick="accordionToggle('panel4')" type="button" id="accordion4" class="faq__container--accordion">Open accordion</button>
+  <div class="panel faq__container--panel4">
+    <p>Lorem ipsum...</p>
+  </div> 
+  <button onclick="accordionToggle('panel5')" type="button" id="accordion5" class="faq__container--accordion">Open accordion</button>
+  <div class="panel faq__container--panel5">
+    <p>Lorem ipsum...</p>
+  </div> 
+ 
+</div>
+        
+      </div>
+    </section>
   </body>
 </html>

@@ -1,4 +1,4 @@
-.header, .hero__container--text-wrapper, .hero__container--button-wrapper button {
+.header, .hero__container--text-wrapper, .hero__container--button-wrapper button, .faq__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -45,7 +45,7 @@
   }
 }
 
-.header, .hero__container--text-wrapper, .hero__container--button-wrapper button {
+.header, .hero__container--text-wrapper, .hero__container--button-wrapper button, .faq__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +183,73 @@
 .hero__container--image-wrapper img {
   width: 100%;
   height: 100%;
+}
+
+.header, .hero__container--text-wrapper, .hero__container--button-wrapper button, .faq__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.faq {
+  background-color: #ffffff;
+}
+
+.faq__container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 2rem;
+}
+
+.faq__container--title {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq__container--questions {
+  width: 100%;
+}
+
+.faq__container--accordion {
+  background-color: #ffffff;
+  color: #2b2d42;
+  cursor: pointer;
+  padding: 1.2rem;
+  width: 100%;
+  border: none;
+  border-top: 0.12rem solid grey;
+  text-align: left;
+  outline: none;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.faq__container .panel {
+  padding: 0 1rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  display: none;
+}
+
+.faq__container .active, .faq__container--accordion:hover {
+  background-color: #edf2f4;
 }
 
 * {

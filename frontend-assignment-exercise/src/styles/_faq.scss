@@ -1,0 +1,56 @@
+@import 'colors';
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.show {
+  display: block !important;
+}
+
+.faq {
+  background-color: $white;
+
+  &__container {
+    @extend %center;
+    flex-direction: column;
+    margin-top: 2rem;
+    &--title {
+      width: 100%;
+      align-self: center;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    &--questions {
+      width: 100%;
+    }
+
+    &--accordion {
+      background-color: $white;
+      color: $darkGrey;
+      cursor: pointer;
+      padding: 1.2rem;
+      width: 100%;
+      border: none;
+      border-top: 0.12rem solid grey;
+      text-align: left;
+      outline: none;
+      font-size: 1rem;
+      transition: all 0.3s;
+    }
+
+    .panel {
+      padding: 0 1rem;
+      overflow: hidden;
+      background-color: $white;
+      display: none;
+    }
+
+    .active,
+    &--accordion:hover {
+      background-color: $lightGrey;
+    }
+  }
+}
