@@ -1,0 +1,105 @@
+@import 'media-queries';
+@import 'colors';
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background-color: $lightGrey;
+
+  &__container {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 2rem;
+
+    @include lgMobile {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    &--text-wrapper {
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      @extend %center;
+      margin-bottom: 2rem;
+
+      & h1 {
+        color: $darkGrey;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      & h2 {
+        color: $darkGrey;
+        font-weight: 400;
+      }
+    }
+    &--btn-primary {
+      background-image: linear-gradient($lightRed, $darkRed);
+    }
+    &--btn-secondary {
+      background-image: linear-gradient($grey, $darkGrey);
+    }
+
+    &--item {
+      display: none;
+      padding: 1rem;
+
+      @include lgMobile {
+        display: block;
+        max-height: 60vh;
+      }
+    }
+
+    &--button-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      @include lgMobile {
+        flex-direction: row;
+      }
+
+      & button {
+        height: 3rem;
+        @extend %center;
+        border: 0;
+        outline: 0;
+        width: 60%;
+        align-self: center;
+        padding: 1rem 1rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        border-radius: 50px;
+
+        @include lgMobile {
+          margin-inline: 0.4rem;
+        }
+
+        & a {
+          text-decoration: none;
+          color: $white;
+          font-size: 0.9rem;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &--mobile {
+      @include lgMobile {
+        display: none;
+      }
+    }
+
+    &--image-wrapper {
+      margin-bottom: 2rem;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
